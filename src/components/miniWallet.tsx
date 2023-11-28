@@ -1,9 +1,8 @@
-import { type FC } from "react";
+import { type FC } from 'react';
 
-type MiniWalletProps = {
-};
+type MiniWalletProps = {};
 
-const MiniWallet: FC<MiniWalletProps> = (() => {
+const MiniWallet: FC<MiniWalletProps> = () => {
   return (
     <div className="w-full h-full flex justify-center items-center">
       <div className="w-[320px] bg-black/50 flex flex-col">
@@ -18,7 +17,7 @@ const MiniWallet: FC<MiniWalletProps> = (() => {
         <div className="token-list flex flex-col">
           <div className="w-full bg-white/40 p-2 flex justify-start items-center gap-2">
             <div className="w-full">
-              <div className="w-3 h-3 rounded-full bg-red-200"></div>
+              <div className="w-3 h-3 rounded-full bg-red-200" />
             </div>
             <div className="w-full flex flex-col">
               <span className="text-sm text-yellow-300">ETH</span>
@@ -32,6 +31,6 @@ const MiniWallet: FC<MiniWalletProps> = (() => {
       </div>
     </div>
   );
-});
+};
 
 export default MiniWallet;

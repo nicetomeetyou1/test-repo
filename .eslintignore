@@ -1,2 +1,4 @@
 node_modules
+dist
+tailwind.config.js
 distnode --eval "fs.writeFileSync('.prettierrc','{}\n')"

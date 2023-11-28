@@ -1,2 +1,2 @@
-export {default as Button} from './zklogin/button';
-export {default as MiniWallet} from './miniWallet';
+export { default as Button } from './zklogin/button';
+export { default as MiniWallet } from './miniWallet';

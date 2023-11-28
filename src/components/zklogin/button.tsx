@@ -1,22 +1,19 @@
-import React, { ReactNode, forwardRef, ForwardedRef } from "react";
+import React, { forwardRef } from 'react';
+import type { ReactNode, ForwardedRef } from 'react';
 
 type BasicButtonProps = {
   icon?: ReactNode;
   disabled?: boolean;
+  className?: string;
+  onClick?: () => void;
 };
 
-export type ButtonProps<T> = BasicButtonProps & React.DetailedHTMLProps<React.ButtonHTMLAttributes<T>, T>;
+export type ButtonProps<T> = BasicButtonProps &
+  React.DetailedHTMLProps<React.ButtonHTMLAttributes<T>, T>;
 
 const Button = forwardRef(
   (
-    {
-      className,
-      children,
-      disabled,
-      onClick,
-      icon,
-      ...rest
-    }: ButtonProps<HTMLButtonElement>,
+    { className, children, disabled, onClick, icon, ...rest }: ButtonProps<HTMLButtonElement>,
     ref?
   ): React.JSX.Element => {
     return (
@@ -34,5 +31,5 @@ const Button = forwardRef(
   }
 );
 
-Button.displayName = "Button";
+Button.displayName = 'Button';
 export default Button;
