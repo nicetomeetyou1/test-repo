@@ -4,12 +4,10 @@ type MiniWalletProps = {};
 
 const MiniWallet: FC<MiniWalletProps> = () => {
   return (
-    <div className="w-full h-full flex justify-center items-center">
-      <div className="w-[320px] bg-black/50 flex flex-col">
+    <div className="miniwallet">
+      <div className="miniwallet-container">
         <div className="header">
-          <div>
-            0xabcdefghijklmnopqrstuvwxyz
-          </div>
+          <div>0xabcdefghijklmnopqrstuvwxyz</div>
           <div>
             <span>1,205 USD</span>
           </div>
