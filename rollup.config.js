@@ -1,8 +1,8 @@
 // rollup.config.js
-import postcss from 'rollup-plugin-postcss';
+const postcss = require('rollup-plugin-postcss');
 
-export default {
-  // ...other Rollup config
+module.exports = {
+  input: 'dist/cjs/index.js',
   plugins: [
     postcss({
       plugins: [
@@ -10,7 +10,7 @@ export default {
         require('autoprefixer'),
       ],
       inject: true, // This will inject your CSS into your JS file
-      extract: false,
+      extract: true,
     }),
     // ...other plugins
   ],
